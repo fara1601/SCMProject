@@ -11,4 +11,4 @@ machine:
 
 general:
   artifacts:
-    - "~SCMProject/coverage"
+    - "master/docs/_build/html/"
