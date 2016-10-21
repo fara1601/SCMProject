@@ -11,4 +11,4 @@ machine:
 
 general:
   artifacts:
-    - "master/docs/_build/html/"
+    - "C:\Users\fara\Documents\GitHub\ProjectSCM\SCMProject\src"
