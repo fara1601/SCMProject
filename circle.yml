@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 machine:
   services:
     - docker
@@ -34,3 +35,18 @@ deployment:
       - step one
       - step two
       - step three
+=======
+--- 
+dependencies: 
+  pre: 
+    - "cp gradle.properties.example gradle.properties"
+experimental: 
+  notify: 
+    branches: 
+      ignore: 
+        - gh-pages
+general: 
+  branches: 
+    ignore: 
+      - gh-pages
+>>>>>>> origin/master
