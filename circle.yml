@@ -8,3 +8,7 @@ machine:
     - docker
   java:
     version: openjdk7
+
+general:
+  artifacts:
+    - "~SCMProject/coverage"
