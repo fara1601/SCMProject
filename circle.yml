@@ -11,4 +11,4 @@ machine:
 
 general:
   artifacts:
-    - "C:\Users\fara\Documents\GitHub\ProjectSCM\SCMProject\src"
+    - "GitHub/ProjectSCM/SCMProject/src/"
