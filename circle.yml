@@ -4,11 +4,14 @@ checkout:
     - git submodule update --init
 
 machine:
-  services:
-    - docker
   java:
-    version: openjdk7
-
+    version: oraclejdk8
 general:
   artifacts:
-    - "GitHub/ProjectSCM/SCMProject/src/"
+    - "build/libs/*.jar"
+    - "build/distributions/*.zip"
+test:
+  post:
+    - mkdir -p $CIRCLE_TEST_REPORTS/junit/
+    - find . -type f -regex ".*/build/test-results/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
+    - ./gradlew jar javadocJar sourcesJar shadowJar distZip copyCIArtifacts
