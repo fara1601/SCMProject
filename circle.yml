@@ -1,2 +1,36 @@
-general:
-  build_dir: api
+machine:
+  services:
+    - docker
+  java:
+    version: openjdk7
+
+checkout:
+  override:
+    - step 1
+    - step 2
+    - step 3
+
+dependencies:
+  pre:
+    - step a
+    - step b
+
+  override:
+    - step i
+    - step ii
+test:
+  override:
+    - echo "test"
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - step one
+      - step two
+  staging:
+    branch: /release-.*/
+    commands:
+      - step one
+      - step two
+      - step three
