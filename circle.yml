@@ -1,0 +1,10 @@
+checkout:
+  post:
+    - git submodule sync
+    - git submodule update --init
+
+machine:
+  services:
+    - docker
+  java:
+    version: openjdk7
