@@ -9,5 +9,4 @@ machine:
 
 general:
   artifacts:
-    - "build/libs/*.jar"
-    - "build/distributions/*.zip"
+    - "target/*.war"
