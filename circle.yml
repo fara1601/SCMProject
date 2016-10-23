@@ -6,6 +6,7 @@ checkout:
 machine:
   java:
     version: oraclejdk8
+
 general:
   artifacts:
     - "build/libs/*.jar"
